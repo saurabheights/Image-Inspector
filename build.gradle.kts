@@ -15,9 +15,10 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2022.2.5")
-    type.set("IC") // Target IDE Platform
+    type.set("PY") // Target IDE Platform - https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html#intellij-extension-type
+    downloadSources.set(false)
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf("Pythonid"))
 }
 
 tasks {
